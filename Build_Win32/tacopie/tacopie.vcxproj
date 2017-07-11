@@ -59,19 +59,19 @@
   <PropertyGroup Label="UserMacros" />
     <PropertyGroup>
       <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\git\cpp_redis\Build_Win32\lib\Debug\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Build_Win32\lib\Debug\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">tacopie.dir\Debug\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">tacopie</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\git\cpp_redis\Build_Win32\lib\Release\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Build_Win32\lib\Release\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">tacopie.dir\Release\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">tacopie</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\git\cpp_redis\Build_Win32\lib\MinSizeRel\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\Build_Win32\lib\MinSizeRel\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">tacopie.dir\MinSizeRel\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">tacopie</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\git\cpp_redis\Build_Win32\lib\RelWithDebInfo\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\Build_Win32\lib\RelWithDebInfo\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">tacopie.dir\RelWithDebInfo\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">tacopie</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
@@ -79,7 +79,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalOptions>%(AdditionalOptions)  /bigobj /bigobj</AdditionalOptions>
-      <AdditionalIncludeDirectories>D:\git\cpp_redis\includes;D:\git\cpp_redis\deps\include;D:\git\cpp_redis\tacopie\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\includes;..\deps\include;..\tacopie\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -92,14 +92,14 @@
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_UNICODE;UNICODE;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <ProgramDataBaseFileName>D:\git\cpp_redis\Build_Win32\lib\Debug\tacopie.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>..\Build_Win32\lib\Debug\tacopie.pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_UNICODE;UNICODE;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\git\cpp_redis\includes;D:\git\cpp_redis\deps\include;D:\git\cpp_redis\tacopie\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\includes;..\deps\include;..\tacopie\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\git\cpp_redis\includes;D:\git\cpp_redis\deps\include;D:\git\cpp_redis\tacopie\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\includes;..\deps\include;..\tacopie\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -113,7 +113,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <AdditionalOptions>%(AdditionalOptions)  /bigobj /bigobj</AdditionalOptions>
-      <AdditionalIncludeDirectories>D:\git\cpp_redis\includes;D:\git\cpp_redis\deps\include;D:\git\cpp_redis\tacopie\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\includes;..\deps\include;..\tacopie\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -126,14 +126,14 @@
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_UNICODE;UNICODE;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat></DebugInformationFormat>
-      <ProgramDataBaseFileName>D:\git\cpp_redis\Build_Win32\lib\Release\tacopie.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>..\Build_Win32\lib\Release\tacopie.pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_UNICODE;UNICODE;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\git\cpp_redis\includes;D:\git\cpp_redis\deps\include;D:\git\cpp_redis\tacopie\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\includes;..\deps\include;..\tacopie\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\git\cpp_redis\includes;D:\git\cpp_redis\deps\include;D:\git\cpp_redis\tacopie\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\includes;..\deps\include;..\tacopie\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -147,7 +147,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <ClCompile>
       <AdditionalOptions>%(AdditionalOptions)  /bigobj /bigobj</AdditionalOptions>
-      <AdditionalIncludeDirectories>D:\git\cpp_redis\includes;D:\git\cpp_redis\deps\include;D:\git\cpp_redis\tacopie\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\includes;..\deps\include;..\tacopie\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -160,14 +160,14 @@
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_UNICODE;UNICODE;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat></DebugInformationFormat>
-      <ProgramDataBaseFileName>D:\git\cpp_redis\Build_Win32\lib\MinSizeRel\tacopie.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>..\Build_Win32\lib\MinSizeRel\tacopie.pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_UNICODE;UNICODE;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\git\cpp_redis\includes;D:\git\cpp_redis\deps\include;D:\git\cpp_redis\tacopie\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\includes;..\deps\include;..\tacopie\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\git\cpp_redis\includes;D:\git\cpp_redis\deps\include;D:\git\cpp_redis\tacopie\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\includes;..\deps\include;..\tacopie\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -181,7 +181,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <ClCompile>
       <AdditionalOptions>%(AdditionalOptions)  /bigobj /bigobj</AdditionalOptions>
-      <AdditionalIncludeDirectories>D:\git\cpp_redis\includes;D:\git\cpp_redis\deps\include;D:\git\cpp_redis\tacopie\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\includes;..\deps\include;..\tacopie\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -194,14 +194,14 @@
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_UNICODE;UNICODE;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <ProgramDataBaseFileName>D:\git\cpp_redis\Build_Win32\lib\RelWithDebInfo\tacopie.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>..\Build_Win32\lib\RelWithDebInfo\tacopie.pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_UNICODE;UNICODE;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\git\cpp_redis\includes;D:\git\cpp_redis\deps\include;D:\git\cpp_redis\tacopie\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\includes;..\deps\include;..\tacopie\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\git\cpp_redis\includes;D:\git\cpp_redis\deps\include;D:\git\cpp_redis\tacopie\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\includes;..\deps\include;..\tacopie\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -213,116 +213,60 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\git\cpp_redis\tacopie\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/git/cpp_redis/tacopie/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/git/cpp_redis -BD:/git/cpp_redis/Build_Win32 --check-stamp-file D:/git/cpp_redis/Build_Win32/tacopie/CMakeFiles/generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/git/cpp_redis/tacopie/CMakeLists.txt;D:\git\cpp_redis\tacopie\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.8\Modules\ExternalProject.cmake;D:\git\cpp_redis\tacopie\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\git\cpp_redis\Build_Win32\tacopie\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/git/cpp_redis/tacopie/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/git/cpp_redis -BD:/git/cpp_redis/Build_Win32 --check-stamp-file D:/git/cpp_redis/Build_Win32/tacopie/CMakeFiles/generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/git/cpp_redis/tacopie/CMakeLists.txt;D:\git\cpp_redis\tacopie\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.8\Modules\ExternalProject.cmake;D:\git\cpp_redis\tacopie\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\git\cpp_redis\Build_Win32\tacopie\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/git/cpp_redis/tacopie/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/git/cpp_redis -BD:/git/cpp_redis/Build_Win32 --check-stamp-file D:/git/cpp_redis/Build_Win32/tacopie/CMakeFiles/generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/git/cpp_redis/tacopie/CMakeLists.txt;D:\git\cpp_redis\tacopie\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.8\Modules\ExternalProject.cmake;D:\git\cpp_redis\tacopie\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\git\cpp_redis\Build_Win32\tacopie\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/git/cpp_redis/tacopie/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/git/cpp_redis -BD:/git/cpp_redis/Build_Win32 --check-stamp-file D:/git/cpp_redis/Build_Win32/tacopie/CMakeFiles/generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/git/cpp_redis/tacopie/CMakeLists.txt;D:\git\cpp_redis\tacopie\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.8\Modules\ExternalProject.cmake;D:\git\cpp_redis\tacopie\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\git\cpp_redis\Build_Win32\tacopie\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
-    </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="D:\git\cpp_redis\includes\cpp_redis\future_client.hpp" />
-    <ClInclude Include="D:\git\cpp_redis\includes\cpp_redis\logger.hpp" />
-    <ClInclude Include="D:\git\cpp_redis\includes\cpp_redis\redis_client.hpp" />
-    <ClInclude Include="D:\git\cpp_redis\includes\cpp_redis\redis_error.hpp" />
-    <ClInclude Include="D:\git\cpp_redis\includes\cpp_redis\redis_subscriber.hpp" />
-    <ClInclude Include="D:\git\cpp_redis\includes\cpp_redis\reply.hpp" />
-    <ClInclude Include="D:\git\cpp_redis\includes\cpp_redis\builders\array_builder.hpp" />
-    <ClInclude Include="D:\git\cpp_redis\includes\cpp_redis\builders\builder_iface.hpp" />
-    <ClInclude Include="D:\git\cpp_redis\includes\cpp_redis\builders\builders_factory.hpp" />
-    <ClInclude Include="D:\git\cpp_redis\includes\cpp_redis\builders\bulk_string_builder.hpp" />
-    <ClInclude Include="D:\git\cpp_redis\includes\cpp_redis\builders\error_builder.hpp" />
-    <ClInclude Include="D:\git\cpp_redis\includes\cpp_redis\builders\integer_builder.hpp" />
-    <ClInclude Include="D:\git\cpp_redis\includes\cpp_redis\builders\reply_builder.hpp" />
-    <ClInclude Include="D:\git\cpp_redis\includes\cpp_redis\builders\simple_string_builder.hpp" />
-    <ClInclude Include="D:\git\cpp_redis\includes\cpp_redis\network\redis_connection.hpp" />
-    <ClInclude Include="D:\git\cpp_redis\includes\cpp_redis\network\tcp_client.hpp" />
-    <ClInclude Include="D:\git\cpp_redis\includes\cpp_redis\network\tcp_client_iface.hpp" />
-    <ClInclude Include="D:\git\cpp_redis\tacopie\includes\tacopie\error.hpp" />
-    <ClInclude Include="D:\git\cpp_redis\tacopie\includes\tacopie\logger.hpp" />
-    <ClInclude Include="D:\git\cpp_redis\tacopie\includes\tacopie\typedefs.hpp" />
-    <ClInclude Include="D:\git\cpp_redis\tacopie\includes\tacopie\network\io_service.hpp" />
-    <ClInclude Include="D:\git\cpp_redis\tacopie\includes\tacopie\network\self_pipe.hpp" />
-    <ClInclude Include="D:\git\cpp_redis\tacopie\includes\tacopie\network\tcp_client.hpp" />
-    <ClInclude Include="D:\git\cpp_redis\tacopie\includes\tacopie\network\tcp_server.hpp" />
-    <ClInclude Include="D:\git\cpp_redis\tacopie\includes\tacopie\network\tcp_socket.hpp" />
-    <ClInclude Include="D:\git\cpp_redis\tacopie\includes\tacopie\utils\thread_pool.hpp" />
-    <ClCompile Include="D:\git\cpp_redis\sources\future_client.cpp"  />
-    <ClCompile Include="D:\git\cpp_redis\sources\logger.cpp" >
+    <ClInclude Include="..\includes\cpp_redis\future_client.hpp" />
+    <ClInclude Include="..\includes\cpp_redis\logger.hpp" />
+    <ClInclude Include="..\includes\cpp_redis\redis_client.hpp" />
+    <ClInclude Include="..\includes\cpp_redis\redis_error.hpp" />
+    <ClInclude Include="..\includes\cpp_redis\redis_subscriber.hpp" />
+    <ClInclude Include="..\includes\cpp_redis\reply.hpp" />
+    <ClInclude Include="..\includes\cpp_redis\builders\array_builder.hpp" />
+    <ClInclude Include="..\includes\cpp_redis\builders\builder_iface.hpp" />
+    <ClInclude Include="..\includes\cpp_redis\builders\builders_factory.hpp" />
+    <ClInclude Include="..\includes\cpp_redis\builders\bulk_string_builder.hpp" />
+    <ClInclude Include="..\includes\cpp_redis\builders\error_builder.hpp" />
+    <ClInclude Include="..\includes\cpp_redis\builders\integer_builder.hpp" />
+    <ClInclude Include="..\includes\cpp_redis\builders\reply_builder.hpp" />
+    <ClInclude Include="..\includes\cpp_redis\builders\simple_string_builder.hpp" />
+    <ClInclude Include="..\includes\cpp_redis\network\redis_connection.hpp" />
+    <ClInclude Include="..\includes\cpp_redis\network\tcp_client.hpp" />
+    <ClInclude Include="..\includes\cpp_redis\network\tcp_client_iface.hpp" />
+    <ClInclude Include="..\tacopie\includes\tacopie\error.hpp" />
+    <ClInclude Include="..\tacopie\includes\tacopie\logger.hpp" />
+    <ClInclude Include="..\tacopie\includes\tacopie\typedefs.hpp" />
+    <ClInclude Include="..\tacopie\includes\tacopie\network\io_service.hpp" />
+    <ClInclude Include="..\tacopie\includes\tacopie\network\self_pipe.hpp" />
+    <ClInclude Include="..\tacopie\includes\tacopie\network\tcp_client.hpp" />
+    <ClInclude Include="..\tacopie\includes\tacopie\network\tcp_server.hpp" />
+    <ClInclude Include="..\tacopie\includes\tacopie\network\tcp_socket.hpp" />
+    <ClInclude Include="..\tacopie\includes\tacopie\utils\thread_pool.hpp" />
+    <ClCompile Include="..\sources\future_client.cpp"  />
+    <ClCompile Include="..\sources\logger.cpp" >
       <ObjectFileName>$(IntDir)/__/sources/logger.cpp.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="D:\git\cpp_redis\sources\redis_client.cpp"  />
-    <ClCompile Include="D:\git\cpp_redis\sources\redis_subscriber.cpp"  />
-    <ClCompile Include="D:\git\cpp_redis\sources\reply.cpp"  />
-    <ClCompile Include="D:\git\cpp_redis\sources\network\redis_connection.cpp"  />
-    <ClCompile Include="D:\git\cpp_redis\sources\builders\array_builder.cpp"  />
-    <ClCompile Include="D:\git\cpp_redis\sources\builders\builders_factory.cpp"  />
-    <ClCompile Include="D:\git\cpp_redis\sources\builders\bulk_string_builder.cpp"  />
-    <ClCompile Include="D:\git\cpp_redis\sources\builders\error_builder.cpp"  />
-    <ClCompile Include="D:\git\cpp_redis\sources\builders\integer_builder.cpp"  />
-    <ClCompile Include="D:\git\cpp_redis\sources\builders\reply_builder.cpp"  />
-    <ClCompile Include="D:\git\cpp_redis\sources\builders\simple_string_builder.cpp"  />
-    <ClCompile Include="D:\git\cpp_redis\tacopie\sources\error.cpp"  />
-    <ClCompile Include="D:\git\cpp_redis\tacopie\sources\logger.cpp" >
+    <ClCompile Include="..\sources\redis_client.cpp"  />
+    <ClCompile Include="..\sources\redis_subscriber.cpp"  />
+    <ClCompile Include="..\sources\reply.cpp"  />
+    <ClCompile Include="..\sources\network\redis_connection.cpp"  />
+    <ClCompile Include="..\sources\builders\array_builder.cpp"  />
+    <ClCompile Include="..\sources\builders\builders_factory.cpp"  />
+    <ClCompile Include="..\sources\builders\bulk_string_builder.cpp"  />
+    <ClCompile Include="..\sources\builders\error_builder.cpp"  />
+    <ClCompile Include="..\sources\builders\integer_builder.cpp"  />
+    <ClCompile Include="..\sources\builders\reply_builder.cpp"  />
+    <ClCompile Include="..\sources\builders\simple_string_builder.cpp"  />
+    <ClCompile Include="..\tacopie\sources\error.cpp"  />
+    <ClCompile Include="..\tacopie\sources\logger.cpp" >
       <ObjectFileName>$(IntDir)/sources/logger.cpp.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="D:\git\cpp_redis\tacopie\sources\network\tcp_client.cpp"  />
-    <ClCompile Include="D:\git\cpp_redis\tacopie\sources\network\tcp_server.cpp"  />
-    <ClCompile Include="D:\git\cpp_redis\tacopie\sources\utils\thread_pool.cpp"  />
-    <ClCompile Include="D:\git\cpp_redis\tacopie\sources\network\windows\io_service.cpp"  />
-    <ClCompile Include="D:\git\cpp_redis\tacopie\sources\network\windows\self_pipe.cpp"  />
-    <ClCompile Include="D:\git\cpp_redis\tacopie\sources\network\windows\tcp_socket.cpp"  />
+    <ClCompile Include="..\tacopie\sources\network\tcp_client.cpp"  />
+    <ClCompile Include="..\tacopie\sources\network\tcp_server.cpp"  />
+    <ClCompile Include="..\tacopie\sources\utils\thread_pool.cpp"  />
+    <ClCompile Include="..\tacopie\sources\network\windows\io_service.cpp"  />
+    <ClCompile Include="..\tacopie\sources\network\windows\self_pipe.cpp"  />
+    <ClCompile Include="..\tacopie\sources\network\windows\tcp_socket.cpp"  />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="D:\git\cpp_redis\Build_Win32\ZERO_CHECK.vcxproj">
+    <ProjectReference Include="..\Build_Win32\ZERO_CHECK.vcxproj">
       <Project>{188DDBAC-C79B-340A-82C1-961F95CC9562}</Project>
       <Name>ZERO_CHECK</Name>
     </ProjectReference>
