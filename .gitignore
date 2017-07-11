@@ -22,7 +22,6 @@
 *.a
 *.lib
 
-build
 deps
 target
 lib
@@ -31,11 +30,8 @@ lib
 *.exe
 *.out
 *.app
-*.sln
-*.vcxproj
 *.suo
 *.user
-*.filters
 *.VC.db
 *.opendb
 .gitignore
