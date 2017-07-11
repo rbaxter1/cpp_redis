@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>eze.cpp_redis.redistribution</id>
+    <version>1.5.20160916.1</version>
+    <title>eze cpp_redis redistribution</title>
+    <authors>Fix8</authors>
+    <owners>Fix8, Sergey Sedreev</owners>
+    <licenseUrl>https://www.gnu.org/licenses/lgpl.html</licenseUrl>
+    <projectUrl>http://fix8.org/</projectUrl>
+    <iconUrl>https://www.gnu.org/licenses/lgpl.html</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Develop branch of FIX8 libraries</description>
+    <summary>Prebuilt FIX8 library (develoment branch)</summary>
+    <releaseNotes />
+    <copyright>Copyright 2013-2014</copyright>
+    <tags>FIX8 native CoApp v1.5.0 nativepackage</tags>
+  </metadata>
+  <files>
+    <file src="include\**\*.*" target="build\native\include\" />
+    <file src="tacopie\includes\**\*.*" target="build\native\include\" />
+    <file src="Build_Win64\lib\Debug\*.lib" target="build\native\bin\x64\v120\Debug\Desktop\" />
+    <file src="Build_Win64\lib\Debug\*.pdb" target="build\native\lib\x64\v120\Debug\Desktop\" />
+  </files>
+</package>
