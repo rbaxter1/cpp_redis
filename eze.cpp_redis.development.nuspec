@@ -19,7 +19,7 @@
   <files>
     <file src="include\**\*.*" target="build\native\include\" />
     <file src="tacopie\includes\**\*.*" target="build\native\include\" />
-    <file src="Build_Win64\lib\Debug\*.lib" target="build\native\bin\x64\v120\Debug\Desktop\" />
-    <file src="Build_Win64\lib\Debug\*.pdb" target="build\native\lib\x64\v120\Debug\Desktop\" />
+    <file src="Build_Win64\lib\Release\*.lib" target="build\native\bin\x64\v120\Release\Desktop\" />
+    <file src="Build_Win64\lib\Release\*.pdb" target="build\native\lib\x64\v120\Release\Desktop\" />
   </files>
 </package>
