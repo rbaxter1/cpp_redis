@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>eze.cpp_redis.develoment</id>
+    <id>eze.cpp_redis.development</id>
     <version>1.5.20160916.1</version>
     <title>Eze cpp_redis development</title>
     <authors>Fix8</authors>
