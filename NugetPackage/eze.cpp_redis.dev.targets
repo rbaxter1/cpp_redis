@@ -7,10 +7,10 @@
   <ItemDefinitionGroup>
     <ClCompile>
       <PreprocessorDefinitions>HAS_FIX8;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)../../build/native/include/cpp_redis/;$(MSBuildThisFileDirectory)../../build/native/include/tacopie/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)../../build/native/include/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ResourceCompile>
-      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)../../build/native/include/cpp_redis/;$(MSBuildThisFileDirectory)../../build/native/include/tacopie/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)../../build/native/include/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Label="Win32 and v120 and Release and Desktop" Condition="'$(Platform.ToLower())' == 'win32' And ( '$(PlatformToolset.ToLower())' == 'v120' Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8' ) And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And ( !('$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0') And !('$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0') And !('$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0') And !('$(TargetPlatformIdentifier.ToLower())' == 'windows phone' And '$(TargetPlatformVersion)' &gt;= '8.0') And !('$(AppContainerApplication.ToLower())' == 'true') )">
