@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" InitialTargets="fix8_dev_init_targets_0;fix8_dev_init_targets_1;fix8_dev_init_targets_2;fix8_dev_ItemGroupInit_targets_3">
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" InitialTargets="cpp_redis_init_targets_0;cpp_redis_dev_init_targets_1;cpp_redis_init_targets_2">
   <PropertyGroup Label="Default initializers for properties">
     <Linkages-fix8_dev Condition="'$(Linkages-fix8_dev)' == ''">dynamic</Linkages-fix8_dev>
     <CallingConventions-fix8_dev Condition="'$(CallingConventions-fix8_dev)' == ''">cdecl</CallingConventions-fix8_dev>
@@ -7,33 +7,33 @@
   <ItemDefinitionGroup>
     <ClCompile>
       <PreprocessorDefinitions>HAS_FIX8;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)../../build/native/include/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)../../build/native/include/cpp_redis/;$(MSBuildThisFileDirectory)../../build/native/include/tacopie/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ResourceCompile>
-      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)../../build/native/include/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)../../build/native/include/cpp_redis/;$(MSBuildThisFileDirectory)../../build/native/include/tacopie/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Label="Win32 and v120 and Release and Desktop" Condition="'$(Platform.ToLower())' == 'win32' And ( '$(PlatformToolset.ToLower())' == 'v120' Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8' ) And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And ( !('$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0') And !('$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0') And !('$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0') And !('$(TargetPlatformIdentifier.ToLower())' == 'windows phone' And '$(TargetPlatformVersion)' &gt;= '8.0') And !('$(AppContainerApplication.ToLower())' == 'true') )">
     <Link>
-      <AdditionalDependencies>$(MSBuildThisFileDirectory)../../build/native/lib/Win32/v120/Release/Desktop/fix8.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(MSBuildThisFileDirectory)../../build/native/lib/Win32/v120/Release/Desktop/cpp_redis.lib;$(MSBuildThisFileDirectory)../../build/native/lib/Win32/v120/Release/Desktop/tacopie.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Label="x64 and v120 and Release and Desktop" Condition="'$(Platform.ToLower())' == 'x64' And ( '$(PlatformToolset.ToLower())' == 'v120' Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8' ) And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And ( !('$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0') And !('$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0') And !('$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0') And !('$(TargetPlatformIdentifier.ToLower())' == 'windows phone' And '$(TargetPlatformVersion)' &gt;= '8.0') And !('$(AppContainerApplication.ToLower())' == 'true') )">
     <Link>
-      <AdditionalDependencies>$(MSBuildThisFileDirectory)../../build/native/lib/x64/v120/Release/Desktop/fix8.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(MSBuildThisFileDirectory)../../build/native/lib/x64/v120/Release/Desktop/cpp_redis.lib;$(MSBuildThisFileDirectory)../../build/native/lib/x64/v120/Release/Desktop/tacopie.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Label="x64 and v120 and Debug and Desktop" Condition="'$(Platform.ToLower())' == 'x64' And ( '$(PlatformToolset.ToLower())' == 'v120' Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8' ) And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And ( !('$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0') And !('$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0') And !('$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0') And !('$(TargetPlatformIdentifier.ToLower())' == 'windows phone' And '$(TargetPlatformVersion)' &gt;= '8.0') And !('$(AppContainerApplication.ToLower())' == 'true') )">
     <Link>
-      <AdditionalDependencies>$(MSBuildThisFileDirectory)../../build/native/lib/x64/v120/Debug/Desktop/fix8d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(MSBuildThisFileDirectory)../../build/native/lib/x64/v120/Debug/Desktop/cpp_redis.lib;$(MSBuildThisFileDirectory)../../build/native/lib/x64/v120/Debug/Desktop/tacopie.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Label="Win32 and v120 and Debug and Desktop" Condition="'$(Platform.ToLower())' == 'win32' And ( '$(PlatformToolset.ToLower())' == 'v120' Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8' ) And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And ( !('$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0') And !('$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0') And !('$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0') And !('$(TargetPlatformIdentifier.ToLower())' == 'windows phone' And '$(TargetPlatformVersion)' &gt;= '8.0') And !('$(AppContainerApplication.ToLower())' == 'true') )">
     <Link>
-      <AdditionalDependencies>$(MSBuildThisFileDirectory)../../build/native/lib/Win32/v120/Debug/Desktop/fix8d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(MSBuildThisFileDirectory)../../build/native/lib/Win32/v120/Debug/Desktop/cpp_redis.lib;$(MSBuildThisFileDirectory)../../build/native/lib/Win32/v120/Debug/Desktop/tacopie.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <Target Name="fix8_dev_AfterBuild" AfterTargets="AfterBuild">
+  <Target Name="cpp_redis_AfterBuild" AfterTargets="AfterBuild">
     <Copy SkipUnchangedFiles="true" SourceFiles="@(CopyToOutput)" UseHardlinksIfPossible="true" DestinationFolder="$(TargetDir)">
       <Output TaskParameter="DestinationFiles" PropertyName="DestinationFiles" />
       <Output TaskParameter="DestinationFiles" ItemName="DestinationFiles" />
@@ -41,10 +41,10 @@
       <Output TaskParameter="CopiedFiles" ItemName="CopiedFiles" />
     </Copy>
   </Target>
-  <Target Name="fix8_dev_BeforeLink" AfterTargets="BeforeLink">
+  <Target Name="cpp_redis_dev_BeforeLink" AfterTargets="BeforeLink">
     <CheckRuntimeLibrary RuntimeLibrary="%(ClCompile.RuntimeLibrary)" ExpectedRuntimeLibrary="none" LibraryName="fix8_dev" />
   </Target>
-  <Target Name="fix8_dev_init_targets_1">
+  <Target Name="cpp_redis_dev_init_targets_1">
     <StringContains Text="Linkages-dynamic" Library="fix8_dev" Value="dynamic" Condition="'$(Linkages-fix8_dev)'==''">
       <Output TaskParameter="Result" PropertyName="Linkages-fix8_dev" />
     </StringContains>
@@ -76,7 +76,7 @@
       <Output TaskParameter="Result" PropertyName="CallingConventions-fix8_dev" />
     </StringContains>
   </Target>
-  <Target Name="fix8_dev_init_targets_2">
+  <Target Name="cpp_redis_init_targets_2">
     <SetEnv Condition="'$(Platform.ToLower())' == 'win32' And ( '$(PlatformToolset.ToLower())' == 'v120' Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8' ) And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And ( !('$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0') And !('$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0') And !('$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0') And !('$(TargetPlatformIdentifier.ToLower())' == 'windows phone' And '$(TargetPlatformVersion)' &gt;= '8.0') And !('$(AppContainerApplication.ToLower())' == 'true') )" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../../build/native/bin/Win32/v120/Release/Desktop">
       <Output TaskParameter="OutputEnvironmentVariable" PropertyName="PATH" />
     </SetEnv>
@@ -90,75 +90,13 @@
       <Output TaskParameter="OutputEnvironmentVariable" PropertyName="PATH" />
     </SetEnv>
   </Target>
-  <Target Name="fix8_dev_ItemGroupInit_targets_3">
-    <ItemGroup Label="Win32 and v120 and Release and Desktop" Condition="'$(Platform.ToLower())' == 'win32' And ( '$(PlatformToolset.ToLower())' == 'v120' Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8' ) And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And ( !('$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0') And !('$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0') And !('$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0') And !('$(TargetPlatformIdentifier.ToLower())' == 'windows phone' And '$(TargetPlatformVersion)' &gt;= '8.0') And !('$(AppContainerApplication.ToLower())' == 'true') )">
-      <CopyToOutput Include="$(MSBuildThisFileDirectory)../../build/native/bin/Win32/v120/Release/Desktop/f8c.exe" />
-      <CopyToOutput Include="$(MSBuildThisFileDirectory)../../build/native/bin/Win32/v120/Release/Desktop/fix8.dll" />
-      <CopyToOutput Include="$(MSBuildThisFileDirectory)../../build/native/bin/Win32/v120/Release/Desktop/fix8.pdb" />
-      <CopyToOutput Include="$(MSBuildThisFileDirectory)../../build/native/bin/Win32/v120/Release/Desktop/seqedit.exe" />
-      <None Include="$(MSBuildThisFileDirectory)../../build/native/bin/Win32/v120/Release/Desktop/f8c.exe">
-        <DeploymentContent>true</DeploymentContent>
-      </None>
-      <None Include="$(MSBuildThisFileDirectory)../../build/native/bin/Win32/v120/Release/Desktop/fix8.dll">
-        <DeploymentContent>true</DeploymentContent>
-      </None>
-      <None Include="$(MSBuildThisFileDirectory)../../build/native/bin/Win32/v120/Release/Desktop/seqedit.exe">
-        <DeploymentContent>true</DeploymentContent>
-      </None>
-    </ItemGroup>
-    <ItemGroup Label="x64 and v120 and Release and Desktop" Condition="'$(Platform.ToLower())' == 'x64' And ( '$(PlatformToolset.ToLower())' == 'v120' Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8' ) And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And ( !('$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0') And !('$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0') And !('$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0') And !('$(TargetPlatformIdentifier.ToLower())' == 'windows phone' And '$(TargetPlatformVersion)' &gt;= '8.0') And !('$(AppContainerApplication.ToLower())' == 'true') )">
-      <CopyToOutput Include="$(MSBuildThisFileDirectory)../../build/native/bin/x64/v120/Release/Desktop/f8c.exe" />
-      <CopyToOutput Include="$(MSBuildThisFileDirectory)../../build/native/bin/x64/v120/Release/Desktop/fix8.dll" />
-      <CopyToOutput Include="$(MSBuildThisFileDirectory)../../build/native/bin/x64/v120/Release/Desktop/fix8.pdb" />
-      <CopyToOutput Include="$(MSBuildThisFileDirectory)../../build/native/bin/x64/v120/Release/Desktop/seqedit.exe" />
-      <None Include="$(MSBuildThisFileDirectory)../../build/native/bin/x64/v120/Release/Desktop/f8c.exe">
-        <DeploymentContent>true</DeploymentContent>
-      </None>
-      <None Include="$(MSBuildThisFileDirectory)../../build/native/bin/x64/v120/Release/Desktop/fix8.dll">
-        <DeploymentContent>true</DeploymentContent>
-      </None>
-      <None Include="$(MSBuildThisFileDirectory)../../build/native/bin/x64/v120/Release/Desktop/seqedit.exe">
-        <DeploymentContent>true</DeploymentContent>
-      </None>
-    </ItemGroup>
-    <ItemGroup Label="x64 and v120 and Debug and Desktop" Condition="'$(Platform.ToLower())' == 'x64' And ( '$(PlatformToolset.ToLower())' == 'v120' Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8' ) And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And ( !('$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0') And !('$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0') And !('$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0') And !('$(TargetPlatformIdentifier.ToLower())' == 'windows phone' And '$(TargetPlatformVersion)' &gt;= '8.0') And !('$(AppContainerApplication.ToLower())' == 'true') )">
-      <CopyToOutput Include="$(MSBuildThisFileDirectory)../../build/native/bin/x64/v120/Debug/Desktop/f8cd.exe" />
-      <CopyToOutput Include="$(MSBuildThisFileDirectory)../../build/native/bin/x64/v120/Debug/Desktop/fix8d.dll" />
-      <CopyToOutput Include="$(MSBuildThisFileDirectory)../../build/native/bin/x64/v120/Debug/Desktop/fix8d.pdb" />
-      <CopyToOutput Include="$(MSBuildThisFileDirectory)../../build/native/bin/x64/v120/Debug/Desktop/seqeditd.exe" />
-      <None Include="$(MSBuildThisFileDirectory)../../build/native/bin/x64/v120/Debug/Desktop/f8cd.exe">
-        <DeploymentContent>true</DeploymentContent>
-      </None>
-      <None Include="$(MSBuildThisFileDirectory)../../build/native/bin/x64/v120/Debug/Desktop/fix8d.dll">
-        <DeploymentContent>true</DeploymentContent>
-      </None>
-      <None Include="$(MSBuildThisFileDirectory)../../build/native/bin/x64/v120/Debug/Desktop/seqeditd.exe">
-        <DeploymentContent>true</DeploymentContent>
-      </None>
-    </ItemGroup>
-    <ItemGroup Label="Win32 and v120 and Debug and Desktop" Condition="'$(Platform.ToLower())' == 'win32' And ( '$(PlatformToolset.ToLower())' == 'v120' Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8' ) And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And ( !('$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0') And !('$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0') And !('$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0') And !('$(TargetPlatformIdentifier.ToLower())' == 'windows phone' And '$(TargetPlatformVersion)' &gt;= '8.0') And !('$(AppContainerApplication.ToLower())' == 'true') )">
-      <CopyToOutput Include="$(MSBuildThisFileDirectory)../../build/native/bin/Win32/v120/Debug/Desktop/f8cd.exe" />
-      <CopyToOutput Include="$(MSBuildThisFileDirectory)../../build/native/bin/Win32/v120/Debug/Desktop/fix8d.dll" />
-      <CopyToOutput Include="$(MSBuildThisFileDirectory)../../build/native/bin/Win32/v120/Debug/Desktop/fix8d.pdb" />
-      <CopyToOutput Include="$(MSBuildThisFileDirectory)../../build/native/bin/Win32/v120/Debug/Desktop/seqeditd.exe" />
-      <None Include="$(MSBuildThisFileDirectory)../../build/native/bin/Win32/v120/Debug/Desktop/f8cd.exe">
-        <DeploymentContent>true</DeploymentContent>
-      </None>
-      <None Include="$(MSBuildThisFileDirectory)../../build/native/bin/Win32/v120/Debug/Desktop/fix8d.dll">
-        <DeploymentContent>true</DeploymentContent>
-      </None>
-      <None Include="$(MSBuildThisFileDirectory)../../build/native/bin/Win32/v120/Debug/Desktop/seqeditd.exe">
-        <DeploymentContent>true</DeploymentContent>
-      </None>
-    </ItemGroup>
-  </Target>
   <ItemGroup>
     <PropertyPageSchema Include="$(MSBuildThisFileDirectory)\default-propertiesui.xml" />
   </ItemGroup>
   <UsingTask TaskName="NuGetPackageOverlay" AssemblyFile="$(NuGet-NativeExtensionPath)\coapp.NuGetNativeMSBuildTasks.dll" Condition="'$(DesignTimeBuild)' != 'true' AND ('$(NugetMsBuildExtensionLoaded)' == '' OR '$(NugetMsBuildExtensionLoaded)' == 'false')" />
   <UsingTask TaskName="CheckRuntimeLibrary" AssemblyFile="$(NuGet-NativeExtensionPath)\coapp.NuGetNativeMSBuildTasks.dll" Condition="'$(DesignTimeBuild)' != 'true' AND ('$(NugetMsBuildExtensionLoaded)' == '' OR '$(NugetMsBuildExtensionLoaded)' == 'false')" />
   <UsingTask TaskName="StringContains" AssemblyFile="$(NuGet-NativeExtensionPath)\coapp.NuGetNativeMSBuildTasks.dll" Condition="'$(DesignTimeBuild)' != 'true' AND ('$(NugetMsBuildExtensionLoaded)' == '' OR '$(NugetMsBuildExtensionLoaded)' == 'false')" />
-  <Target Name="fix8_dev_init_targets_0">
+  <Target Name="cpp_redis_init_targets_0">
     <Copy SkipUnchangedFiles="true" SourceFiles="$(NuGet-NativeExtensionPath)\coapp.NuGetNativeMSBuildTasks.dll.orig" DestinationFiles="$(NuGet-NativeExtensionPath)\coapp.NuGetNativeMSBuildTasks.dll" />
     <PropertyGroup>
       <NugetMsBuildExtensionLoaded Condition="'$(NugetMsBuildExtensionLoaded)' == '' OR '$(NuGet-OverlayLoaded)' == 'false'">true</NugetMsBuildExtensionLoaded>
