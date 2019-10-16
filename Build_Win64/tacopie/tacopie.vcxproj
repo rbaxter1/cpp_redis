@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|x64">
@@ -24,31 +24,32 @@
     <Platform>x64</Platform>
     <ProjectName>tacopie</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -57,25 +58,25 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-    <PropertyGroup>
-      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\Build_Win64\lib\Debug\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tacopie.dir\Debug\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tacopie</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\Build_Win64\lib\Release\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tacopie.dir\Release\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tacopie</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\Build_Win64\lib\MinSizeRel\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">tacopie.dir\MinSizeRel\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">tacopie</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\Build_Win64\lib\RelWithDebInfo\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">tacopie.dir\RelWithDebInfo\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">tacopie</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
-    </PropertyGroup>
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\Build_Win64\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tacopie.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tacopie</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\Build_Win64\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tacopie.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tacopie</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">..\..\Build_Win64\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">tacopie.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">tacopie</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\Build_Win64\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">tacopie.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">tacopie</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <AdditionalOptions>%(AdditionalOptions)  /bigobj /bigobj</AdditionalOptions>
@@ -125,7 +126,8 @@
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_UNICODE;UNICODE;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
       <ProgramDataBaseFileName>..\..\Build_Win64\lib\Release\tacopie.pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
@@ -159,7 +161,8 @@
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_UNICODE;UNICODE;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
       <ProgramDataBaseFileName>..\..\Build_Win64\lib\MinSizeRel\tacopie.pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
@@ -239,31 +242,31 @@
     <ClInclude Include="..\..\tacopie\includes\tacopie\network\tcp_server.hpp" />
     <ClInclude Include="..\..\tacopie\includes\tacopie\network\tcp_socket.hpp" />
     <ClInclude Include="..\..\tacopie\includes\tacopie\utils\thread_pool.hpp" />
-    <ClCompile Include="..\..\sources\future_client.cpp"  />
-    <ClCompile Include="..\..\sources\logger.cpp" >
+    <ClCompile Include="..\..\sources\future_client.cpp" />
+    <ClCompile Include="..\..\sources\logger.cpp">
       <ObjectFileName>$(IntDir)/__/sources/logger.cpp.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="..\..\sources\redis_client.cpp"  />
-    <ClCompile Include="..\..\sources\redis_subscriber.cpp"  />
-    <ClCompile Include="..\..\sources\reply.cpp"  />
-    <ClCompile Include="..\..\sources\network\redis_connection.cpp"  />
-    <ClCompile Include="..\..\sources\builders\array_builder.cpp"  />
-    <ClCompile Include="..\..\sources\builders\builders_factory.cpp"  />
-    <ClCompile Include="..\..\sources\builders\bulk_string_builder.cpp"  />
-    <ClCompile Include="..\..\sources\builders\error_builder.cpp"  />
-    <ClCompile Include="..\..\sources\builders\integer_builder.cpp"  />
-    <ClCompile Include="..\..\sources\builders\reply_builder.cpp"  />
-    <ClCompile Include="..\..\sources\builders\simple_string_builder.cpp"  />
-    <ClCompile Include="..\..\tacopie\sources\error.cpp"  />
-    <ClCompile Include="..\..\tacopie\sources\logger.cpp" >
+    <ClCompile Include="..\..\sources\redis_client.cpp" />
+    <ClCompile Include="..\..\sources\redis_subscriber.cpp" />
+    <ClCompile Include="..\..\sources\reply.cpp" />
+    <ClCompile Include="..\..\sources\network\redis_connection.cpp" />
+    <ClCompile Include="..\..\sources\builders\array_builder.cpp" />
+    <ClCompile Include="..\..\sources\builders\builders_factory.cpp" />
+    <ClCompile Include="..\..\sources\builders\bulk_string_builder.cpp" />
+    <ClCompile Include="..\..\sources\builders\error_builder.cpp" />
+    <ClCompile Include="..\..\sources\builders\integer_builder.cpp" />
+    <ClCompile Include="..\..\sources\builders\reply_builder.cpp" />
+    <ClCompile Include="..\..\sources\builders\simple_string_builder.cpp" />
+    <ClCompile Include="..\..\tacopie\sources\error.cpp" />
+    <ClCompile Include="..\..\tacopie\sources\logger.cpp">
       <ObjectFileName>$(IntDir)/sources/logger.cpp.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="..\..\tacopie\sources\network\tcp_client.cpp"  />
-    <ClCompile Include="..\..\tacopie\sources\network\tcp_server.cpp"  />
-    <ClCompile Include="..\..\tacopie\sources\utils\thread_pool.cpp"  />
-    <ClCompile Include="..\..\tacopie\sources\network\windows\io_service.cpp"  />
-    <ClCompile Include="..\..\tacopie\sources\network\windows\self_pipe.cpp"  />
-    <ClCompile Include="..\..\tacopie\sources\network\windows\tcp_socket.cpp"  />
+    <ClCompile Include="..\..\tacopie\sources\network\tcp_client.cpp" />
+    <ClCompile Include="..\..\tacopie\sources\network\tcp_server.cpp" />
+    <ClCompile Include="..\..\tacopie\sources\utils\thread_pool.cpp" />
+    <ClCompile Include="..\..\tacopie\sources\network\windows\io_service.cpp" />
+    <ClCompile Include="..\..\tacopie\sources\network\windows\self_pipe.cpp" />
+    <ClCompile Include="..\..\tacopie\sources\network\windows\tcp_socket.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Build_Win64\ZERO_CHECK.vcxproj">
